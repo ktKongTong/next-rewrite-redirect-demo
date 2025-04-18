@@ -1,0 +1,30 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "next-rewrite-redirect-demo-1",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2025-03-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".open-next/assets"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		// "BACKEND_URL":""
+	}
+//	set a custom domain
+//	rewrite can't work with `*.workers.dev` domain which auto assigned by cloudflare
+//	when rewrite to a backend path, the result is cloudflare 404 page(page not found, There is nothing here yet...)
+//	"route": {
+//		"pattern": "your-custom-domain",
+//		"custom_domain": true
+//	}
+}
