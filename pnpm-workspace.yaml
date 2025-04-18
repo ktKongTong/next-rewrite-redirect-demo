@@ -1,0 +1,9 @@
+packages:
+  - 'backend'
+  - 'frontend'
+  - 'frontend-vercel'
+catalog:
+  wrangler: ^4.10.0
+  "hono": ^4.7.6
+  "@opennextjs/cloudflare": ^1.0.0-beta.3
+  "@cloudflare/workers-types": 4.20250409.0
