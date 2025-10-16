@@ -14,16 +14,3 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-
-const cfInit = async () => {
-  // @ts-ignore
-  const { initOpenNextCloudflareForDev } =await import('@opennextjs/cloudflare')
-  await initOpenNextCloudflareForDev()
-}
-
-try {
-  cfInit()
-  .catch(e => console.error(e));
-}catch (e) {
-  console.log("failed to load cf env");
-}
