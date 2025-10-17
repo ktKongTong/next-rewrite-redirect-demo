@@ -17,14 +17,14 @@
 		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20250415.0",
-		"@opennextjs/cloudflare": "catalog:",
+		"@cloudflare/workers-types": "^4.20251008.0",
+		"@opennextjs/cloudflare": "^1.9.1",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"tailwindcss": "^4",
 		"typescript": "^5",
-		"wrangler": "^4.12.0"
+		"wrangler": "^4.38.0"
 	}
 }
